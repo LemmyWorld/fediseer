@@ -34,7 +34,6 @@ class ActivityPubPM:
         }
 
     def send_pm_to_right_software(self, message, username, domain, software):
-        logger.debug([username,domain,software])
         software_map = {
             "lemmy": self.send_lemmy_pm,
             "mastodon": self.send_mastodon_pm,
